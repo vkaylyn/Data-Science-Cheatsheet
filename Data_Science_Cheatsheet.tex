@@ -76,13 +76,14 @@
 % ----------------------------------------------------------------
 \section{Statistics}
 \subsection{Discrete Distributions}
-\textbf{Binomial} - number of successes $x$ in $n$ events, each with $p$ probability $\to \binom{n}x p^x q^{n-x}$, with $\mu = np$ and $\delta^2 = npq$. If n = 1, this is Bernoulli.
+\textbf{Binomial} - number of successes $x$ in $n$ independent events, each with $p$ probability $\to \binom{n}x p^x q^{n-x}$, with $\mu = np$ and $\delta^2 = np(1-p)$. If n = 1, this is Bernoulli.
+
+
+\textbf{Hypergeometric} - number of successes $x$ in a size $N$ population with $n$ draws, without replacement. $\mu=n\frac{x}{N}$ 
 
 \textbf{Geometric} - first success with $p$ probability on the $n^{th}$ trial $\to q^{n-1}p$, with mean = $1/p$
 
 \textbf{Negative Binomial} - number of failures before $r$ successes 
-
-\textbf{Hypergeometric} - number of successes $x$ in a size $N$ population with $n$ draws, without replacement. $\mu=n\frac{x}{N}$ 
 
 \textbf{Poisson} - number of successes $x$ in a fixed time interval, where success occurs at an average rate $\lambda$ $\to$ $\frac{\lambda^xe^{-\lambda}}{x!}$. $\mu = \delta^2 = \lambda$
 
